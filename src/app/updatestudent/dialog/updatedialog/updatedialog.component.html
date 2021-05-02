@@ -1,0 +1,25 @@
+<div  *ngIf="data === 'student'">
+    <h5>Dashboard Notification</h5>
+    <h6>Are you sure want to delete the Student Details?</h6>
+    <div class="buttons">
+        <button mat-button (click)="submit()">Yes</button>
+        <button mat-button (click)="cancel()">Cancel</button>
+    </div>
+</div>
+
+
+<div  *ngIf="data === 'teacher'">
+    <h5>Dashboard Notification</h5>
+    <h6>Are you sure want to delete the Teacher Details?</h6>
+    <div class="buttons">
+        <button mat-button (click)="submit()">Yes</button>
+        <button mat-button (click)="cancel()">Cancel</button>
+    </div>
+</div>
+<div  *ngIf="data === 'credentials'">
+    <h5>Dashboard Notification</h5>
+    <h6>Please Enter Correct Credentials.?</h6>
+    <div class="buttons">
+        <button mat-button (click)="submit()">OK</button>
+    </div>
+</div>
